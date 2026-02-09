@@ -79,36 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Video Modal Logic
-    const modal = document.getElementById("videoModal");
-    const btnShowreel = document.getElementById("btnShowreel");
-    const openShowreelLink = document.getElementById("openShowreel");
-    const closeBtn = document.querySelector(".close-modal");
-    const video = document.getElementById("showreelVideo");
 
-    function openModal(e) {
-        if (e) e.preventDefault();
-        modal.classList.add("show");
-        video.currentTime = 0;
-        video.play();
-    }
-
-    function closeModal() {
-        modal.classList.remove("show");
-        video.pause();
-    }
-
-    if (btnShowreel) btnShowreel.addEventListener("click", openModal);
-    if (openShowreelLink) openShowreelLink.addEventListener("click", openModal);
-
-    if (closeBtn) closeBtn.addEventListener("click", closeModal);
-
-    // Close on click outside
-    window.addEventListener("click", (e) => {
-        if (e.target == modal) {
-            closeModal();
-        }
-    });
 
     // Gallery Admin Features (Delete & Edit) - Localhost Only
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
