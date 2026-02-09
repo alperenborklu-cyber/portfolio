@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alperen | Visual Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-wrapper">
+                <video id="showreelVideo" controls>
+                    <source src="assets/deneme1718.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div id="lightboxCaption"></div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Alperen Börklü</a>
+            <ul class="nav-links">
+                <li><a href="#" id="openShowreel">Showreel</a></li> <!-- New Showreel Link -->
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <!-- Profile Picture -->
+                <div class="profile-container">
+                    <img src="assets/mezuniyet.jpg" alt="Alperen" class="profile-pic">
+                </div>
+
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Alperen</span></h1>
+                <p class="hero-subtitle">I turn pixels into stories.</p>
+
+                <div class="hero-buttons">
+                    <button id="btnShowreel" class="btn-primary">Watch Showreel</button>
+                    <a href="#work" class="btn-secondary-outline">View Works</a>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section id="work" class="gallery-section">
+            <div class="section-header">
+                <h2>Selected Works</h2>
+                <div class="line"></div>
+            </div>
+
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/render1.png" alt="Ethereal Form" loading="lazy">
+                    <div class="overlay">
+                        <h3>Ethereal Form</h3>
+                        <p>3D Visualization</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/uzi.png" alt="Hard Surface" loading="lazy">
+                    <div class="overlay">
+                        <h3>Uzi</h3>
+                        <p>PROP DESIGN</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/render12.png" alt="Atmosphere" loading="lazy">
+                    <div class="overlay">
+                        <h3>Atmosphere</h3>
+                        <p>Environment</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/f7464357-7ff5-4d0d-8b0d-01489f0a16dc.png" alt="Conception" loading="lazy">
+                    <div class="overlay">
+                        <h3>War Elephant</h3>
+                        <p>ART DIRECTION</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/48eda3d0-492f-4aa0-a2e1-e8280a28a5e1.png" alt="Structure" loading="lazy">
+                    <div class="overlay">
+                        <h3>Alien</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/92f704ff-abeb-4594-bfe3-2e3955e4c145.png" alt="Forms" loading="lazy">
+                    <div class="overlay">
+                        <h3>Orc</h3>
+                        <p>EXPERIMENTAL</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/45d45810-047c-466d-943f-4217743e4e23.png" alt="Light Study" loading="lazy">
+                    <div class="overlay">
+                        <h3>Owl</h3>
+                        <p>LIGHTING</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/c5bea731-574d-4054-9aa7-94dc8266d82a.png" alt="Composition" loading="lazy">
+                    <div class="overlay">
+                        <h3>Drill</h3>
+                        <p>LAYOUT</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/06091a82-494a-498a-927b-3481451ad51a.png" alt="Visions" loading="lazy">
+                    <div class="overlay">
+                        <h3>Seating Unit</h3>
+                        <p>CONCEPT</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/fd.png" alt="Fluidity" loading="lazy">
+                    <div class="overlay">
+                        <h3>Tractor</h3>
+                        <p>SIMULATION</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/13908785-1438-44dc-b4df-b44662d75cbc.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Dragon</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/2132131.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Knife</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/30c7ab0a-f98d-4974-90be-adceaba996b2 (1).png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Horse</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/4933d2a0-31c2-4799-8531-f1d3d3ec2986.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Coke Grenade</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/556ff11c-968f-4f1b-85c1-4fb110254d87.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Spaceship</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/87cbb353-138e-44f0-93fa-07886acdfc5a.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Ant Eater</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/asadasd.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Drone</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-2.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Goliath</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-5.0.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Skull #1</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-5.2.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Skull #2</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-5.3.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Skull #3</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-5.4.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Skull #4</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/Başlıksız-5.7.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Skull #5</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/c5f24a7f-d959-4253-ac4c-e545ee12dc20.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Ottoman Mace</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/de08ec16-062c-4714-a401-fcd46167124a.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Centaure</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/e08f26e7-4c5f-4f58-8cbf-d07c6dc710b9.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>K-F 1500</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/instapost.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Headphones</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/instapost2.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Flashlight</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/instapost3.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Utility Knife</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/instapost4.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Corkscrew</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/instapost5.png" alt="Artwork" loading="lazy">
+                    <div class="overlay">
+                        <h3>Wine Bottle</h3>
+                        <p>DIGITAL ART</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>The Artist</h2>
+                <p>I’m a visual storyteller working at the intersection of film, design, and strategy. My background
+                    spans 2D–3D animation, directing, and post-production, with a strong focus on atmosphere, rhythm,
+                    and meaning. I approach every project as both a creative and a system — balancing emotion with
+                    structure.</p>
+                <p>I’ve worked across short films, documentaries, commercials, and personal projects, taking on roles
+                    from concept development to final delivery. Storyboarding, visual language, and narrative clarity
+                    are at the core of how I work. I’m especially interested in how color, movement, light, psychology,
+                    and sociology shape perception.</p>
+                <p>Rather than following trends, I focus on building distinctive visual identities and narratives that
+                    feel intentional and lasting. Whether the goal is artistic impact or strategic communication, I aim
+                    to create work that resonates, not just performs.</p>
+
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Available for freelance projects and collaborations.</p>
+            <a href="mailto:hello@alp.design" class="btn-secondary">Contact Me</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Alperen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
