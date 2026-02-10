@@ -1,7 +1,5 @@
-__pycache__/
-*.pyc
+node_modules/
 .DS_Store
-.env
-.vscode/
-assets/deneme1718.mp4
-assets/Meshy_AI_Eternal_Warrior_0125192747_texture_fbx.zip
+*.zip
+*.mp4
+assets/*.mp4

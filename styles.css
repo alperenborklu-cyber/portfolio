@@ -870,3 +870,139 @@ body {
 body.lightbox-open {
     overflow: hidden;
 }
+/* Resume Section */
+.resume-section {
+    padding: 5rem 5%;
+    background: #1a1a1a; 
+    color: #f0f0f0;
+}
+
+.resume-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+    color: #fff;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-sidebar {
+    border-right: 1px solid rgba(255,255,255,0.1);
+    padding-right: 2rem;
+}
+
+.resume-photo-container {
+    margin-bottom: 2rem;
+}
+
+.resume-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border-radius: 4px;
+}
+
+.resume-info-block {
+    margin-bottom: 3rem;
+}
+
+.resume-info-block h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.resume-info-block p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-weight: 600;
+}
+
+.resume-content {
+    padding-left: 1rem;
+}
+
+.resume-block {
+    margin-bottom: 3rem;
+}
+
+.resume-block h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 0.5rem;
+}
+
+.resume-block p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job h4 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.resume-block ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #ccc;
+}
+
+.resume-block li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .resume-header {
+        font-size: 3.5rem;
+    }
+    
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resume-sidebar {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .resume-content {
+        padding-left: 0;
+    }
+
+    .resume-photo {
+        margin: 0 auto;
+    }
+}
