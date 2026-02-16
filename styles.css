@@ -1048,16 +1048,18 @@ body.lightbox-open {
 }
 
 .brand-item img {
-    height: 60px;
+    height: 90px;
     width: auto;
-    max-width: 150px;
+    max-width: 200px;
     object-fit: contain;
-    filter: grayscale(100%) brightness(0.8);
-    transition: filter 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
 
 .brand-item img:hover {
-    filter: grayscale(0%) brightness(1);
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 @keyframes scroll-left {
