@@ -430,14 +430,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (blogModalBody) blogModalBody.innerHTML = htmlContent;
         if (blogModal) {
             blogModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            // document.body.style.overflow = 'hidden'; // Removed scroll lock
         }
     }
 
     if (closeBlogBtn) {
         closeBlogBtn.addEventListener('click', () => {
             if (blogModal) blogModal.classList.remove('active');
-            document.body.style.overflow = '';
+            // document.body.style.overflow = ''; // Removed scroll lock
         });
     }
 
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
         blogModal.addEventListener('click', (e) => {
             if (e.target === blogModal) {
                 blogModal.classList.remove('active');
-                document.body.style.overflow = '';
+                // document.body.style.overflow = ''; // Removed scroll lock
             }
         });
     }
