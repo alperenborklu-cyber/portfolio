@@ -29,6 +29,9 @@
             <ul class="nav-links">
                 <li><a href="https://www.youtube.com/watch?v=v-fPkuxrqN4" target="_blank">Showreel</a></li>
                 <li><a href="#work">Work</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -430,6 +433,52 @@
 
                     <button type="submit" class="btn-submit">Send Request</button>
                 </form>
+            </div>
+        </div>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <h2 class="section-title">Insights & Philosophy</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" onclick="openBlogModal(0)">
+                    <div class="blog-content">
+                        <span class="blog-category">Filmmaking</span>
+                        <h3>From Concept to Screen</h3>
+                        <p>How I develop a short film step by step, from raw idea to final render.</p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" onclick="openBlogModal(1)">
+                    <div class="blog-content">
+                        <span class="blog-category">Design Thinking</span>
+                        <h3>Design Principles in Cinema</h3>
+                        <p>What industrial design taught me about narrative structure and filmmaking.</p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" onclick="openBlogModal(2)">
+                    <div class="blog-content">
+                        <span class="blog-category">Cinematography</span>
+                        <h3>Engineered Emotion</h3>
+                        <p>Analysis of what truly builds cinematic atmosphere and mood.</p>
+                        <span class="read-more">Read Article &rarr;</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Modal -->
+        <div id="blogModal" class="blog-modal">
+            <div class="modal-content blog-modal-content">
+                <span class="close-modal close-blog">&times;</span>
+                <div id="blogModalBody">
+                    <!-- Content injected via JS -->
+                </div>
             </div>
         </div>
 
