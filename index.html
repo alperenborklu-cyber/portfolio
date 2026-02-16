@@ -335,6 +335,104 @@
             </div>
         </section>
 
+        </div>
+        </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">Pricing & Services</h2>
+            <div class="pricing-container">
+
+                <!-- Basic Tier -->
+                <div class="pricing-card">
+                    <h3 class="tier-name">Basic</h3>
+                    <div class="price-tag">$500</div>
+                    <p class="tier-desc">Perfect for social media content and simple loops.</p>
+                    <ul class="tier-features">
+                        <li>1x 3D Loop or Still Render</li>
+                        <li>Up to 10 Seconds</li>
+                        <li>1080p Resolution</li>
+                        <li>1 Revision Round</li>
+                        <li>Standard Delivery (5 Days)</li>
+                    </ul>
+                    <button class="btn-pricing" onclick="openContactModal('Basic Tier')">Request a Quote</button>
+                </div>
+
+                <!-- Standard Tier -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="tier-name">Standard</h3>
+                    <div class="price-tag">$1,000</div>
+                    <p class="tier-desc">Ideal for product reveals and brand intros.</p>
+                    <ul class="tier-features">
+                        <li>15-30 Second Animation</li>
+                        <li>3D Modeling & Texturing</li>
+                        <li>4K Resolution</li>
+                        <li>Sound Design Included</li>
+                        <li>2 Revision Rounds</li>
+                        <li>Commercial Rights</li>
+                    </ul>
+                    <button class="btn-pricing btn-highlight" onclick="openContactModal('Standard Tier')">Request a
+                        Quote</button>
+                </div>
+
+                <!-- Gold Tier -->
+                <div class="pricing-card">
+                    <h3 class="tier-name">Gold</h3>
+                    <div class="price-tag">$2,000</div>
+                    <p class="tier-desc">Cinematic quality for diverse media campaigns.</p>
+                    <ul class="tier-features">
+                        <li>Up to 60 Second Premium Animation</li>
+                        <li>Complex Simulations & Environments</li>
+                        <li>Full Campaign Assets (Social + Web)</li>
+                        <li>Source Files Included</li>
+                        <li>Priority Support</li>
+                        <li>Unlimited Revisions</li>
+                    </ul>
+                    <button class="btn-pricing" onclick="openContactModal('Gold Tier')">Request a Quote</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Modal -->
+        <div id="contactModal" class="contact-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Request a Quote</h2>
+                <form action="https://formsubmit.co/hello@alperenborklu.com" method="POST">
+                    <input type="hidden" name="_subject" id="formSubject" value="New Quote Request">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://alperenborklu.com">
+                    <!-- Ideally redirect back to site -->
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="package">Selected Package</label>
+                        <input type="text" id="package" name="package" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell me more about your project..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+
         <!-- RESUME SECTION -->
         <section id="resume" class="resume-section">
             <h2 class="resume-header">RESUME</h2>

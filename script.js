@@ -264,4 +264,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial attachment
     attachLightboxEvents();
 
+    // Contact Form Modal
+    const contactModal = document.getElementById('contactModal');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const packageInput = document.getElementById('package');
+    const formSubject = document.getElementById('formSubject');
+
+    window.openContactModal = function (tierName) {
+        if (contactModal) {
+            contactModal.classList.add('active');
+            if (packageInput) packageInput.value = tierName;
+            if (formSubject) formSubject.value = `New Quote Request: ${tierName}`;
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+            contactModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // Close modal when clicking outside
+    if (contactModal) {
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                contactModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
 });
