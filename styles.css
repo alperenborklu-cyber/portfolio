@@ -1489,3 +1489,66 @@ body.lightbox-open {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 8rem 5%;
+    background: #080808;
+    /* Maintain consistency with other sections */
+}
+
+.testimonials-grid {
+    column-width: 300px;
+    column-gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    background: #111;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.stars {
+    color: var(--accent-color);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.review-text {
+    color: #ccc;
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.client-name {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        column-count: 1;
+        /* Force single column on mobile */
+    }
+}
