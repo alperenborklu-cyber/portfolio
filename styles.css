@@ -1051,9 +1051,10 @@ body.lightbox-open {
 
 .brands-track {
     display: flex;
-    gap: 50px;
+    /* gap: 50px; Removed gap for smoother loop */
     width: max-content;
     animation: scroll-left 20s linear infinite;
+    /* Restored to original velocity */
 }
 
 .brand-item {
@@ -1061,6 +1062,8 @@ body.lightbox-open {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 80px;
+    /* Replaces gap for seamless looping logic */
 }
 
 .brand-item img {
@@ -1080,7 +1083,8 @@ body.lightbox-open {
 
 /* Specific adjustments for logos */
 .brand-item img[alt="TRT Belgesel"] {
-    transform: scale(1.8);
+    transform: scale(2.5);
+    /* 1.4x bigger than previous 1.8 */
 }
 
 .brand-item img[alt="Ticaret Bakanlığı"] {
@@ -1093,7 +1097,8 @@ body.lightbox-open {
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-33.333%);
+        /* Move by exactly 1/3 (one set) */
     }
 }
 
