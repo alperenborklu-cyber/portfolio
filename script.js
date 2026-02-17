@@ -822,12 +822,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (blogModalBody) blogModalBody.innerHTML = htmlContent;
         if (blogModal) {
             blogModal.classList.add('active');
-            // document.body.style.overflow = 'hidden'; // Removed scroll lock
 
-            // Scroll to the modal/bottom of the page
-            setTimeout(() => {
-                blogModal.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
+            // Ensure modal starts at the top
+            blogModal.scrollTop = 0;
         }
     }
 

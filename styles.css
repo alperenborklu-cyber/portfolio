@@ -53,7 +53,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 2000;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -65,7 +65,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.modal.show {
+.modal.active {
     display: flex;
     justify-content: center;
     align-items: center;
