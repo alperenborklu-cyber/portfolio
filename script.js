@@ -772,6 +772,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const blogModalBody = document.getElementById('blogModalBody');
     const closeBlogBtn = document.querySelector('.close-blog');
 
+    // Pagination State
+    let displayedPosts = 3;
+
     // Function to render the blog grid dynamically
     function renderBlogGrid() {
         const blogGrid = document.querySelector('.blog-grid');
@@ -779,10 +782,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         blogGrid.innerHTML = ''; // Clear existing content
 
-        blogPosts.forEach((post, index) => { // Use all posts
+        // Slice array to show only visible posts
+        const postsToShow = blogPosts.slice(0, displayedPosts);
+
+        postsToShow.forEach((post, index) => { // Use sliced posts
             const article = document.createElement('article');
             article.className = 'blog-card';
-            article.onclick = () => openBlogModal(index); // Use index from loop
+            article.onclick = () => openBlogModal(index); // Index matches original array because we render in order? 
+            // WAIT: index in slice (0,1,2) matches original (0,1,2). 
+            // BUT if we use slice, the click handler index needs to be correct relative to the *Original* array? 
+            // Actually, if we just render 0..N, the index I matches 0..N of original. Yes.
 
             // Create a short excerpt from content (strip HTML)
             const tmpDiv = document.createElement('div');
@@ -800,6 +809,34 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             blogGrid.appendChild(article);
         });
+
+        // Manage Load More Button
+        updateLoadMoreButton();
+    }
+
+    function updateLoadMoreButton() {
+        const blogSection = document.querySelector('.blog-section');
+        let loadMoreContainer = document.querySelector('.load-more-container');
+
+        if (displayedPosts < blogPosts.length) {
+            if (!loadMoreContainer) {
+                loadMoreContainer = document.createElement('div');
+                loadMoreContainer.className = 'load-more-container';
+
+                const btn = document.createElement('button');
+                btn.className = 'btn-load-more';
+                btn.textContent = 'Load More Insights';
+                btn.onclick = () => {
+                    displayedPosts += 3; // Load 3 more
+                    renderBlogGrid();
+                };
+
+                loadMoreContainer.appendChild(btn);
+                blogSection.appendChild(loadMoreContainer);
+            }
+        } else {
+            if (loadMoreContainer) loadMoreContainer.remove();
+        }
     }
 
     // Call render function on load

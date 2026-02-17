@@ -1398,3 +1398,29 @@ body.lightbox-open {
 .close-blog:hover {
     color: var(--accent-color);
 }
+
+/* Load More Button Styles */
+.load-more-container {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.btn-load-more {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #888;
+    padding: 15px 40px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-body);
+}
+
+.btn-load-more:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
