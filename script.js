@@ -652,6 +652,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (blogModal) {
             blogModal.classList.add('active');
             // document.body.style.overflow = 'hidden'; // Removed scroll lock
+
+            // Scroll to the modal/bottom of the page
+            setTimeout(() => {
+                blogModal.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
         }
     }
 
