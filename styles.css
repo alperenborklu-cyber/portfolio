@@ -9,6 +9,10 @@
     --transition-speed: 0.4s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +51,18 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/* Scroll Margin for Sticky Header - Increased for better visibility */
+section,
+#work,
+#brands,
+#pricing,
+#blog,
+#resume,
+#about,
+#contact {
+    scroll-margin-top: 150px;
 }
 
 /* Modal */
