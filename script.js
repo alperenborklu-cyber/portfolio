@@ -872,6 +872,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
     // Close on outside click for blog modal
     if (blogModal) {
         blogModal.addEventListener('click', (e) => {
@@ -882,4 +883,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+});
+
+// Cinematic Preloader Logic
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+
+    // Force a slightly longer display time for the 'cinematic' feel
+    setTimeout(() => {
+        if (preloader) {
+            preloader.classList.add('fade-out');
+
+            // Remove from DOM after transition
+            setTimeout(() => {
+                preloader.remove();
+            }, 1000);
+        }
+    }, 2000); // 2 seconds delay before fading out
 });
