@@ -300,6 +300,178 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- BLOG FUNCTIONALITY ---
     const blogPosts = [
         {
+            category: "Motion Design & Industry Trends",
+            title: "11 Motion Design Trends Shaping 2026",
+            content: `
+                <p><strong>The pace of change in motion design has never been faster.</strong> Here's what's defining our industry in 2026—and how you can stay ahead.</p>
+                <p>Video and motion design are evolving at a breakneck pace, and 2026 is shaping up to be a year of radical hybrid creativity. Creators are blending cutting-edge AI tools with traditional craft.</p>
+                <h3>1. Do It in Post (With AI)</h3>
+                <p>AI is now deeply integrated into every editing and creative app. Hybrid AI workflows let you work faster and focus on storytelling.</p>
+                <h3>2. Authenticity Through Imperfection</h3>
+                <p>Viewers are gravitating toward handheld, raw, and emotionally honest footage. Imperfection signals trust and authenticity.</p>
+                <h3>3. Story-Driven Brand Films</h3>
+                <p>Brands are realizing that audiences want to feel something. Cinematic storytelling is reclaiming its place in advertising.</p>
+                <h3>4. Craft as Luxury</h3>
+                <p>We're seeing brands celebrate hand-drawn animation, stop-motion, and mixed-media artistry as a counterweight to generative sameness.</p>
+                <h3>5. AI-Generated Actors and Digital Doubles</h3>
+                <p>AI video generators can now create consistent AI characters. We're seeing a rise in "digital doubles" based on real people.</p>
+                <h3>6. Platform-First Editing</h3>
+                <p>Social platforms are becoming full-fledged editing suites. Creators aren't just posting to TikTok—they're editing inside it.</p>
+                <h3>7. The End of Aspect Ratio Rules</h3>
+                <p>Aspect ratios are no longer creative constraints. AI framing tools let editors instantly adapt a master edit to any ratio.</p>
+                <h3>8. Analog Nostalgia</h3>
+                <p>We're witnessing a revival of analog aesthetics: film grain, warm lighting, and VHS overlays. Vibe is as powerful as polish.</p>
+                <h3>9. Wearable POV Filmmaking</h3>
+                <p>With smart glasses, creators are capturing the world exactly as they see it. Raw, intimate, and immersive.</p>
+                <h3>10. Minimalistic Editing</h3>
+                <p>Minimalistic editing prioritizes authenticity and pacing. Long takes and gentle refinements let audiences actually listen.</p>
+                <h3>11. Motion Design Becomes Strategic</h3>
+                <p>Motion systems will become the anchor that lets brands flex without losing themselves. Motion knows when to push and when to pause.</p>
+                <p><strong>Looking Ahead:</strong> Are you chasing trends, or creating work that feels intentional?</p>
+            `
+        },
+        {
+            category: "Motion Design & Industry Trends",
+            title: "Motion Design Is Becoming Programmable",
+            content: `
+                <p><strong>Timelines and keyframes are giving way to rules and logic.</strong> Here's how "programming motion" is changing what it means to be a motion designer.</p>
+                <p>Traditional workflows demand hours of manual labor. AI motion design replaces timelines with logic. Instead of manually placing every movement, creators define intent and relationships.</p>
+                <h3>The CodeGen Moment for Video</h3>
+                <p>Software development changed when AI began generating code. The same shift is happening in video. Motion is described through rules: "A text block fades in over a fixed duration."</p>
+                <h3>What Programmable Motion Unlocks</h3>
+                <p><strong>1. Personalization at Scale:</strong> Generate 10,000 unique video ads, each perfectly timed.</p>
+                <p><strong>2. Template-Based Production:</strong> Non-technical teams input content and receive professional output.</p>
+                <p><strong>3. Vibe Editing:</strong> "Make this feel more energetic." AI translates direction into implementation.</p>
+                <p><strong>The Economics:</strong> After 50-100 videos, AI motion graphics become dramatically cheaper.</p>
+                <p><strong>The Shift:</strong> Designers move away from manual execution and toward system design. The future isn't about choosing a single tool—it's about designing the systems.</p>
+            `
+        },
+        {
+            category: "Motion Design & Industry Trends",
+            title: "The VFX/Animation Industry in 2026",
+            content: `
+                <p><strong>After years of disruption, the industry is finding its footing.</strong> Here's where we stand—and where we're heading.</p>
+                <p>The industry is balancing uncertainty with opportunity. While business has been roller-coaster, technology like AI, virtual production, and real-time rendering is surging.</p>
+                <h3>Key Technologies Reshaping the Industry</h3>
+                <p><strong>AI and Machine Learning:</strong> Doing the heavy lifting (roto, clean-up) so artists focus on creative.</p>
+                <p><strong>Real-Time Rendering:</strong> Unreal Engine is speeding up decisions and bringing everyone into the creative process earlier.</p>
+                <p><strong>Cloud Workflows:</strong> Teams in different countries work like they're in the same room.</p>
+                <p><strong>LED Stages:</strong> Becoming cost-effective even for simple sequences.</p>
+                <h3>The Human Element</h3>
+                <p>Despite tech, human connection remains essential. "The value of human connection will outweigh the pursuit of displacing staff."</p>
+                <p><strong>What This Means for Motion Designers:</strong> Specialization in human craft, cross-industry applications, and hybrid workflows are the keys to 2026.</p>
+            `
+        },
+        {
+            category: "AI & The Future of Creation",
+            title: "AI in Motion Design: From Experimental to Essential",
+            content: `
+                <p><strong>AI is no longer a novelty—it's becoming as essential as keyframing.</strong> Here's how to integrate AI without losing your creative soul.</p>
+                <p>In 2026, AI is deeply integrated. The question is no longer "should I use AI?" but "how do I use it well?"</p>
+                <h3>Where AI Adds Real Value</h3>
+                <p><strong>1. Automating Tedious Tasks:</strong> Masking, rotoscoping, cleanup.</p>
+                <p><strong>2. Speeding Up Iteration:</strong> Explore 20 color variations in minutes.</p>
+                <p><strong>3. Handling Complex Effects:</strong> Fire, water, crowds—generated with prompts.</p>
+                <h3>The Human Role</h3>
+                <p>AI doesn't replace creative direction; it amplifies it. You define the vision, make aesthetic judgments, and bring emotional intelligence.</p>
+                <p><strong>The Bottom Line:</strong> The creators who thrive won't be those who resist AI. They'll be those who use AI to handle repetition and their humanity to handle everything else.</p>
+            `
+        },
+        {
+            category: "AI & The Future of Creation",
+            title: "When AI Does the Heavy Lifting, Story Matters More",
+            content: `
+                <p><strong>AI can generate infinite content, but it can't make people care.</strong> Storytelling is the ultimate differentiator.</p>
+                <p>"The core shortcoming is story." When everyone has access to the same tools, differentiation shifts from technique to intention.</p>
+                <h3>What AI Can't Do</h3>
+                <p>It can mimic emotion but can't feel it. It can't grasp cultural nuance. It cannot build relationships.</p>
+                <h3>Storytelling Techniques for 2026</h3>
+                <p><strong>Start with Human Truth:</strong> Behind every product is a human need.</p>
+                <p><strong>Create Emotional Arcs:</strong> Even 30-second spots need tension and release.</p>
+                <p><strong>Build Worlds:</strong> "Strong brands will creating brand worlds that audiences can engage with."</p>
+                <p><strong>Trust Authenticity:</strong> "Perfect is out. Real is in."</p>
+                <p><strong>The Future Is Human:</strong> Whether it's a social loop or a film, story is what makes people care. And caring is the rarest commodity.</p>
+            `
+        },
+        {
+            category: "AI & The Future of Creation",
+            title: "The AI漫剧 Revolution: What Motion Designers Can Learn",
+            content: `
+                <p><strong>China's AI漫剧 market has exploded from niche experiment to 200 billion RMB industry in just two years.</strong> Here's what Western motion designers need to know.</p>
+                <p>This isn't incremental growth. It's explosive transformation. In 2024, the market was less than 30 million RMB. By 2025, it's projected to reach 200 billion RMB.</p>
+                <h3>What Is AI漫剧?</h3>
+                <p>AI漫剧 refers to animated short-form content created using artificial intelligence. Episodes typically run 3-8 minutes, with AI handling script generation, storyboard design, character modeling, and voice synthesis.</p>
+                <h3>How AI Is Reshaping Production</h3>
+                <p><strong>1. The Asset Library Revolution:</strong> Central to production is the "主体库" (subject library)—collections of reusable digital assets. When everything is modular, nothing needs to be rebuilt from scratch.</p>
+                <p><strong>2. New Specialized Roles:</strong> AI has created new jobs like "Image generation specialists" and "Post-production directors."</p>
+                <p><strong>3. From Linear to Iterative:</strong> Production is no longer linear. Teams generate, review, refine, and regenerate rapidly.</p>
+                <h3>The Catch: Story Still Wins</h3>
+                <p>For all the technological advancement, industry leaders emphasize: "Less than 5% break through—the core shortcoming is story." Teams with sophisticated AI workflows still fail if they can't tell compelling stories.</p>
+                <p><strong>Looking Forward:</strong> The revolution shows what happens when AI meets creative ambition at scale. Production explodes. Costs collapse. But story remains the one thing technology can't provide.</p>
+            `
+        },
+        {
+            category: "Brand Identity & Commercial Work",
+            title: "Why Motion Design Is Becoming a Strategic Brand Asset",
+            content: `
+                <p><strong>Motion is no longer just decoration—it's how brands stay recognizable in a fragmented, fast-moving world.</strong> Here's why forward-thinking companies are treating motion as strategy.</p>
+                <p>"Motion has become essential for brands, and 2026 is when they'll double down." It's not just about making things move. It's about using motion strategically to build recognition and convey personality.</p>
+                <h3>What Strategic Motion Looks Like</h3>
+                <p><strong>1. Motion Systems, Not Just Animations:</strong> A strategic approach means creating rules. When should the logo animate? How fast are transitions? These rules become the foundation.</p>
+                <p><strong>2. Recognition Across Contexts:</strong> From the massive Sphere in Vegas to a mobile feed, motion provides continuity even when the format changes.</p>
+                <p><strong>3. Emotional Consistency:</strong> Color and typography convey brand personality, but motion brings it to life. Strategic motion ensures this personality translates everywhere.</p>
+                <p><strong>4. Breaking Rules Intentionally:</strong> When you know the rules, you can break them intentionally—and those moments become meaningful.</p>
+                <p><strong>The Bottom Line:</strong> Motion design in 2026 isn't about making things move. It's about making brands recognizable, consistent, and emotionally resonant across every possible touchpoint.</p>
+            `
+        },
+        {
+            category: "Brand Identity & Commercial Work",
+            title: "The End of Visual Identity as the \"Main Event\"",
+            content: `
+                <p><strong>Recognition without participation doesn't build value.</strong> Here's why forward-thinking brands are moving from consistent identities to immersive worlds.</p>
+                <p>"People remember what they do, not what they're shown." Recognition is table stakes. What matters is participation.</p>
+                <h3>From Identity to World</h3>
+                <p>Instead of focusing on visual consistency, brands need to focus on world-building: creating environments audiences can enter. In a brand world, the logo is an entry point, not the destination.</p>
+                <h3>Motion's Role in World-Building</h3>
+                <p><strong>Motion creates space:</strong> Through camera movement and depth, motion turns screens into spaces.</p>
+                <p><strong>Motion conveys presence:</strong> The way elements move creates a sense of aliveness.</p>
+                <p><strong>Motion enables participation:</strong> Interactive motion turns passive viewing into active engagement.</p>
+                <p><strong>Designing for Change:</strong> The strongest brands will design brand world experiences as stories that people live, rather than just observe. For motion designers, we're not just making things move—we're creating the spaces where participation unfolds.</p>
+            `
+        },
+        {
+            category: "Brand Identity & Commercial Work",
+            title: "Why Personality Is Becoming the Ultimate Differentiator",
+            content: `
+                <p><strong>When AI can generate infinite content, the one thing it can't replicate is genuine personality.</strong> Here's why being human matters more than ever.</p>
+                <p>"As AI accelerates sameness, personality will become one of the most valuable differentiators a brand can have." When everyone has access to the same tools, differentiation shifts to personality.</p>
+                <h3>What Brand Personality Looks Like</h3>
+                <p><strong>Voice and Tone:</strong> Not just what you say, but how you say it.</p>
+                <p><strong>Visual Behavior:</strong> How does your brand move? Energetically? Calmly? Motion personality is memorable.</p>
+                <p><strong>Imperfections:</strong> "Perfect is out. Real is in." The unpolished moment feels human.</p>
+                <h3>What This Means for Motion Designers</h3>
+                <p><strong>Less Polish, More Presence:</strong> Instead of smoothing every edge, consider what roughness might communicate.</p>
+                <p><strong>Documentary Approaches:</strong> Brand films that feel real communicate authenticity that scripted content can't match.</p>
+                <p><strong>The Next Phase:</strong> Branding isn't louder or faster; it's more felt. It's about giving brands the ability to feel like someone.</p>
+            `
+        },
+        {
+            category: "Brand Identity & Commercial Work",
+            title: "From Minimalism to Curated Maximalism",
+            content: `
+                <p><strong>The era of ultra-minimalism is giving way to something richer.</strong> Here's what the shift to curated maximalism means for motion designers.</p>
+                <p>Brand design is shifting from neutral simplicity to demand for layered, emotionally resonant systems. This is curated maximalism—layered, intentional, and deeply human.</p>
+                <h3>What Curated Maximalism Looks Like</h3>
+                <p><strong>Layered Visuals:</strong> Texture over image, pattern behind type. Depth rewards attention.</p>
+                <p><strong>Rich Texture:</strong> Tactile qualities like grain and material simulation signal humanity.</p>
+                <p><strong>Intentional Complexity:</strong> Everything is there for a reason. It's richness with purpose.</p>
+                <h3>The Role of Motion</h3>
+                <p>Motion reveals how layers relate. It adds texture that feels alive. It establishes the rhythm that guides viewers through complex content.</p>
+                <p><strong>Coherence Over Consistency:</strong> In a maximalist world, coherence matters more. Everything should feel connected, even when it looks different.</p>
+                <p><strong>The Bottom Line:</strong> Great design doesn't chase attention, it earns belief. Curated maximalism is about creating work so rich that audiences choose to engage.</p>
+            `
+        },
+        {
             category: "Filmmaking",
             title: "From Concept to Screen: How I Develop a Short Film",
             keywords: "short film process, filmmaking workflow, storyboard development",
