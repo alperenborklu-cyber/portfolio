@@ -395,14 +395,14 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             category: "AI & The Future of Creation",
-            title: "The AI漫剧 Revolution: What Motion Designers Can Learn",
+            title: "The AI Animation Revolution: What Motion Designers Can Learn",
             content: `
-                <p><strong>China's AI漫剧 market has exploded from niche experiment to 200 billion RMB industry in just two years.</strong> Here's what Western motion designers need to know.</p>
+                <p><strong>China's AI Animation market has exploded from niche experiment to 200 billion RMB industry in just two years.</strong> Here's what Western motion designers need to know.</p>
                 <p>This isn't incremental growth. It's explosive transformation. In 2024, the market was less than 30 million RMB. By 2025, it's projected to reach 200 billion RMB.</p>
-                <h3>What Is AI漫剧?</h3>
-                <p>AI漫剧 refers to animated short-form content created using artificial intelligence. Episodes typically run 3-8 minutes, with AI handling script generation, storyboard design, character modeling, and voice synthesis.</p>
+                <h3>What Is AI Animation?</h3>
+                <p>AI Animation refers to animated short-form content created using artificial intelligence. Episodes typically run 3-8 minutes, with AI handling script generation, storyboard design, character modeling, and voice synthesis.</p>
                 <h3>How AI Is Reshaping Production</h3>
-                <p><strong>1. The Asset Library Revolution:</strong> Central to production is the "主体库" (subject library)—collections of reusable digital assets. When everything is modular, nothing needs to be rebuilt from scratch.</p>
+                <p><strong>1. The Asset Library Revolution:</strong> Central to production is the "Target Library" (subject library)—collections of reusable digital assets. When everything is modular, nothing needs to be rebuilt from scratch.</p>
                 <p><strong>2. New Specialized Roles:</strong> AI has created new jobs like "Image generation specialists" and "Post-production directors."</p>
                 <p><strong>3. From Linear to Iterative:</strong> Production is no longer linear. Teams generate, review, refine, and regenerate rapidly.</p>
                 <h3>The Catch: Story Still Wins</h3>
