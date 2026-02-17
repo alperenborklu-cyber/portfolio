@@ -641,7 +641,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="article-header">
                 <span class="article-category">${post.category}</span>
                 <h2 class="article-title">${post.title}</h2>
-                <div class="article-meta">Keywords: ${post.keywords}</div>
             </div>
             <div class="article-body">
                 ${post.content}
