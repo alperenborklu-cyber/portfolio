@@ -1093,7 +1093,7 @@ body.lightbox-open {
 
 /* Specific adjustments for logos */
 .brand-item img[alt="TRT Belgesel"] {
-    transform: scale(2.5);
+    transform: scale(5.0);
     /* 1.4x bigger than previous 1.8 */
 }
 
