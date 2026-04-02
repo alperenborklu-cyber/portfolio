@@ -1077,9 +1077,9 @@ body.lightbox-open {
 }
 
 .brand-item img {
-    height: 200px;
+    height: 90px;
     width: auto;
-    max-width: 450px;
+    max-width: 250px;
     object-fit: contain;
     filter: grayscale(100%) brightness(1.2);
     opacity: 0.9;
@@ -1093,12 +1093,12 @@ body.lightbox-open {
 
 /* Specific adjustments for logos */
 .brand-item img[alt="TRT Belgesel"] {
-    transform: scale(5.0);
+    transform: scale(2.5);
     /* 1.4x bigger than previous 1.8 */
 }
 
 .brand-item img[alt="Ticaret Bakanlığı"] {
-    transform: scale(5.4);
+    transform: scale(1.8);
 }
 
 @keyframes scroll-left {
